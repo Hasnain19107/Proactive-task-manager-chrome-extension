@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proactive Tab Manager Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1>Proactive Tab Manager Settings</h1>
+  
+  <div class="section">
+    <h2>Context Management</h2>
+    <label>
+      <input type="checkbox" id="enableContextSwitching"> Enable automatic context switching
+    </label>
+  </div>
+  
+  <div class="section">
+    <h2>Tab Suspension</h2>
+    <label>
+      Suspend tabs after: 
+      <select id="suspensionTime">
+        <option value="5">5 minutes</option>
+        <option value="15">15 minutes</option>
+        <option value="30">30 minutes</option>
+        <option value="60">1 hour</option>
+      </select>
+    </label>
+  </div>
+  
+  <div class="section">
+    <h2>Integrations</h2>
+    <button id="connectCalendar">Connect Google Calendar</button>
+    <button id="connectAsana">Connect Asana</button>
+    <button id="connectTrello">Connect Trello</button>
+    <button id="connectSlack">Connect Slack</button>
+  </div>
+  
+  <button id="saveSettings">Save Settings</button>
+  
+  <script src="options.js"></script>
+</body>
+</html>
+

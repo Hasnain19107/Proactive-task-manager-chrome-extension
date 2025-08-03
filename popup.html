@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proactive Tab Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Proactive Tab Manager</h1>
+  </div>
+  
+  <div class="section">
+    <h2>Quick Actions</h2>
+    <button id="manageTabs" class="action-btn">Suspend Inactive Tabs</button>
+    <button id="predictiveTabs" class="action-btn">Suggest Tabs</button>
+  </div>
+  
+  <div class="section">
+    <h2>Context Management</h2>
+    <div class="context-controls">
+      <input type="text" id="contextName" placeholder="Context name (e.g., Work, Personal)" />
+      <div class="context-buttons">
+        <button id="saveContext" class="context-btn">Save Current</button>
+        <button id="restoreContext" class="context-btn">Restore</button>
+      </div>
+    </div>
+    
+    <div class="saved-contexts">
+      <h3>Saved Contexts</h3>
+      <div id="contextList">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Tab Statistics</h2>
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-label">Open Tabs:</span>
+        <span id="openTabsCount" class="stat-value">-</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Suspended:</span>
+        <span id="suspendedTabsCount" class="stat-value">-</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <button id="openOptions" class="settings-btn">Settings</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+
